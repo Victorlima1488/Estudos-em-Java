@@ -5,7 +5,17 @@ public class Main {
          
         Pilha minhaPilha = new Pilha();
 
-       
+       System.out.println(minhaPilha);
+
+       minhaPilha.push(new No(1));
+
+       System.out.println(minhaPilha);
+       minhaPilha.push(new No(2));
+       minhaPilha.push(new No(3));
+       minhaPilha.push(new No(4));
+       minhaPilha.push(new No(5));
+
+       System.out.println(minhaPilha);
          
     }
 }
