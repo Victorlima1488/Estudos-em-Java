@@ -16,6 +16,12 @@ public class Pilha {
         return refNoEntradaPilha;
     }
 
+    public void push(No novoNo){
+        No refAuxiliar = refNoEntradaPilha;
+        refNoEntradaPilha = novoNo;
+        refNoEntradaPilha.setRefNo(refAuxiliar);
+    }
+
     public No pop(){
         if(!this.isEmpty()){
             No noPoped = refNoEntradaPilha;
@@ -28,10 +34,8 @@ public class Pilha {
         
     }
 
-    public void push(No novoNo){
-        No refAuxiliar = refNoEntradaPilha;
-        refNoEntradaPilha = novoNo;
-        refNoEntradaPilha.setRefNo(refAuxiliar);
+    public No viewRef(){
+        return refNoEntradaPilha.getRefNo();
     }
 
     @Override

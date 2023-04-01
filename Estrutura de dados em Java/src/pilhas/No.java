@@ -4,7 +4,7 @@ public class No {
     int conteudo;
     No refNo;
 
-    public No(int conteudo, No refNo){
+    public No(int conteudo){
         this.conteudo = conteudo;
         this.refNo = null;
     }
@@ -21,7 +21,7 @@ public class No {
         return this.refNo;
     }
 
-    public void setRefNo(No reNo){
+    public void setRefNo(No reNo){  
         this.refNo = reNo;
     }
 
