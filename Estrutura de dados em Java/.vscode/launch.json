@@ -8,6 +8,20 @@
             "type": "java",
             "name": "main",
             "request": "launch",
+            "mainClass": "pilhas.main",
+            "projectName": "Estrutura de dados em Java_d0296222"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "pilhas.Main",
+            "projectName": "Estrutura de dados em Java_d0296222"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
             "mainClass": "treinando_no.main",
             "projectName": "Estrutura de dados em Java_d0296222"
         },
