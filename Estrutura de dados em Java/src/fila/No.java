@@ -5,7 +5,7 @@ public class No {
     private Object object;
     private No refNo;
 
-    public void No(Object object){
+    public No(Object object){
         this.object = object;
         this.refNo = null;
     }

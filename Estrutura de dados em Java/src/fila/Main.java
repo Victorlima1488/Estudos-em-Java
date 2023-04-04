@@ -5,7 +5,8 @@ public class Main {
 
         Fila minhaFila = new Fila();
 
-        minhaFila.enqueue(new No("Primeiro"));
+        minhaFila.enqueue(new No("primeiro"));
+
     }
 }
  

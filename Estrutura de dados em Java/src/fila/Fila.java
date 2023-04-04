@@ -2,10 +2,10 @@ package fila;
 
 public class Fila {
     
-    private No refEntradaFila;
+    private No refEntradaFila;  //Cria um elemento do tipo NO
 
     public Fila(){
-        this.refEntradaFila = null;
+        this.refEntradaFila = null;     // Garante que todo elemento do tipo Fila ao ser criado, receberá um conteúdo null.
     }
 
     public boolean isEmpty(){

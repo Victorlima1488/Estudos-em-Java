@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "fila.Main",
+            "projectName": "Estrutura de dados em Java_d0296222"
+        },
+        {
+            "type": "java",
             "name": "main",
             "request": "launch",
             "mainClass": "pilhas.main",
