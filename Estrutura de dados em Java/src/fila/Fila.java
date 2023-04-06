@@ -1,27 +1,27 @@
 package fila;
 
-public class Fila {
+public class Fila<T> {
     
-    private No refEntradaFila;  //Cria um elemento do tipo NO
+    private No<T> refEntradaFila;
 
     public Fila(){
-        this.refEntradaFila = null;     // Garante que todo elemento do tipo Fila ao ser criado, receberá um conteúdo null.
+        this.refEntradaFila = null;
     }
 
     public boolean isEmpty(){
         return refEntradaFila == null ? true : false;
     }
 
-    public void enqueue(Object obj){
-        No novoNo = new No(obj);
+    public void enqueue(T obj){
+        No<T> novoNo = new No<T>(obj);
         novoNo.setRefNo(refEntradaFila);
         refEntradaFila = novoNo;
     }
 
 
-    public Object first(){
+    public T first(){
         if(!this.isEmpty()){
-            No primeiroNo = refEntradaFila;
+            No<T> primeiroNo = refEntradaFila;
             while(true){
                 if(primeiroNo.getRefNo() != null){
                     primeiroNo = primeiroNo.getRefNo();
@@ -35,10 +35,10 @@ public class Fila {
         return null;
     }
 
-    public Object dequeue(){
+    public T dequeue(){
         if(!this.isEmpty()){
-            No primeiroNo = refEntradaFila;
-            No noAuxiliar = refEntradaFila;
+            No<T> primeiroNo = refEntradaFila;
+            No<T> noAuxiliar = refEntradaFila;
             while(true){
                 if(primeiroNo.getRefNo() != null){
                     noAuxiliar = primeiroNo;
@@ -58,7 +58,7 @@ public class Fila {
     @Override
     public String toString(){
         String stringRetorno = "";
-        No noAuxiliar = refEntradaFila;
+        No<T> noAuxiliar = refEntradaFila;
 
         if(refEntradaFila != null){
             while(true){
