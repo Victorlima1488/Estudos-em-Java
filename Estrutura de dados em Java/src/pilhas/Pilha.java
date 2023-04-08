@@ -4,7 +4,7 @@ public class Pilha {
 
     private No refNoEntradaPilha;
 
-    public void Pilha(){
+    public Pilha(){
         this.refNoEntradaPilha = null;
     }
 
