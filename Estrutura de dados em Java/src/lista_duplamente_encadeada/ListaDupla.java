@@ -21,7 +21,7 @@ public class ListaDupla<T> {
         novoNo.setNoProximo(null);
         novoNo.setNoPrevio(ultimoNo);
 
-        if(primeiroNo == null){
+        if(primeiroNo == null){ 
             primeiroNo = novoNo;
         }
         if(ultimoNo != null){
