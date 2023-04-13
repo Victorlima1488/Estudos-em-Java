@@ -23,20 +23,20 @@ public class ArvoreBinaria<T extends Comparable<T>>{
     }
 
     public void exibirInOrdem(){
-        System.out.println("\n Exibindo em ordem");
+        System.out.print("\n Exibindo Inordem ");
         exibirInOrdem(this.raiz);
     }
 
     private void exibirInOrdem(BinNo<T> atual){
         if(atual != null){
             exibirInOrdem(atual.getNoEsq());
-            System.out.println(atual.getConteudo() + ", ");
+            System.out.print(atual.getConteudo() + ", ");
             exibirInOrdem(atual.getNoDir());
         }
     }
 
     public void exibirPosOrdem(){
-        System.out.println("\n Exibindo Posordem");
+        System.out.print("\n Exibindo Preordem ");
         exibirPosOrdem(this.raiz);
     }
 
@@ -44,18 +44,18 @@ public class ArvoreBinaria<T extends Comparable<T>>{
         if(atual != null){
             exibirPosOrdem(atual.getNoEsq());
             exibirPosOrdem(atual.getNoDir());
-            System.out.println(atual.getConteudo() + ", ");
+            System.out.print(atual.getConteudo() + ", ");
         }
     }
 
     public void exibirPreOrdem(){
-        System.out.println("\n Exibindo Preordem");
+        System.out.print("\n Exibindo Posordem ");
         exibirPreOrdem(this.raiz);
     }
 
     private void exibirPreOrdem(BinNo<T> atual){
         if(atual != null){
-            System.out.println(atual.getConteudo() + ", ");
+            System.out.print(atual.getConteudo() + ", ");
             exibirPreOrdem(atual.getNoEsq());
             exibirPreOrdem(atual.getNoDir());
         }
@@ -97,11 +97,31 @@ public class ArvoreBinaria<T extends Comparable<T>>{
                     raiz = noFilho;
                 }
             }else if(atual.getNoDir() == null){
-
-            }else if((atual.getNoEsq() == null){
-
-            }else{
-
+                if(noPai.getNoEsq() == atual){
+                    noPai.setNoEsq(atual.getNoEsq());
+                }else{
+                    noPai.setNoDir(atual.getNoEsq());
+                }
+            }else if(atual.getNoEsq() == null){
+                if(noPai.getNoEsq() == atual){
+                    noPai.setNoEsq(atual.getNoDir());
+                }else {
+                    noPai.setNoDir(atual.getNoDir());
+                }
+            }
+            else{
+                for(temp = atual, noFilho = atual.getNoEsq(); noFilho.getNoDir() != null; temp = noFilho, noFilho = noFilho.getNoDir()){
+                    if(noFilho != atual.getNoEsq()){
+                        temp.setNoDir(noFilho.getNoEsq());
+                        noFilho.setNoEsq(atual.getNoEsq());
+                    }
+                    noFilho.setNoDir(atual.getNoDir());
+                    if(noPai.getNoEsq() == atual){
+                        noPai.setNoEsq(noFilho);
+                    }else{
+                        noPai.setNoDir(noFilho);
+                    }
+                }
             }
 
         }catch (NullPointerException erro){
