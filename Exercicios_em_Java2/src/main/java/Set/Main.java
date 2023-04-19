@@ -1,4 +1,4 @@
-package org.example;
+package Set;
 
 import java.util.*;
 
@@ -52,13 +52,9 @@ public class Main {
 class arcoiris implements Comparable<arcoiris>{
     private String cores;
 
-    public boolean StartWith(String letra){
+    public void StartWith(String letra){
         if(this.getCores().startsWith(letra)) System.out.println(this.getCores());
         System.out.print("");
-    }
-
-    public void RemoveWith(String letra){
-        if(this.getCores().startsWith(letra)) letra.
     }
 
     @Override

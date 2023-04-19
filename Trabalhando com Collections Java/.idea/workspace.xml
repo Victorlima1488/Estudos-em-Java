@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02795526-afad-47f4-a62c-85d13b1e08b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Collections/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercicios em Java/Exercicios_em_Java/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercicios em Java/Exercicios_em_Java/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercicios em Java/Exercicios_em_Java/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercicios em Java/Exercicios_em_Java/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercicios em Java/Exercicios_em_Java/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercicios em Java/Exercicios_em_Java/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercicios em Java/Exercicios_em_Java/src/main/java/Treinando/heranças/e/collections/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercicios_em_Java2/src/main/java/List/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercicios em Java/Exercicios_em_Java/src/main/java/Treinando/heranças/e/collections/Temperatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercicios_em_Java2/src/main/java/List/Temperatura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collections/src/main/java/ExemploList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Collections/src/main/java/List/ExemploList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collections/src/main/java/ExemploOrdenaxaoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Collections/src/main/java/List/ExemploOrdenaxaoList.java" afterDir="false" />
-    </list>
+    <list default="true" id="02795526-afad-47f4-a62c-85d13b1e08b9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
