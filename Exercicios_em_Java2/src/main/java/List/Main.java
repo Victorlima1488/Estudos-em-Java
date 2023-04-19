@@ -1,4 +1,4 @@
-package Treinando.heranças.e.collections;
+package List;
 import java.util.*;
 
 public class Main {

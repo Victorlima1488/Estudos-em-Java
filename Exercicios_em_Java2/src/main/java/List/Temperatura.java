@@ -1,4 +1,4 @@
-package Treinando.heranças.e.collections;
+package List;
 
 public class Temperatura<T> {
     private T temperature;
