@@ -30,7 +30,6 @@ public class Main {
 
         for(arcoiris cor: arcoiris2) System.out.println(cor);
 
-
         System.out.println("-----Exibir as cores em ordem de alfabética");
         Set<arcoiris> arcoiris3 = new TreeSet<>(arcoiris2);
         for(arcoiris cor: arcoiris3) System.out.println(cor);
